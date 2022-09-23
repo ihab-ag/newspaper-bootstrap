@@ -10,4 +10,9 @@
         echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
         exit();
     }
+
+    $query= $mysqli->prepare("SELECT * FROM articles");
+    $query->execute();
+    $query->get_result();
+    
 ?>
