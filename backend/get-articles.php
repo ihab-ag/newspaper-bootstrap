@@ -15,5 +15,10 @@
     $query->execute();
     $array=$query->get_result();
 
-    
+    $response=[];
+    while($a=$array->fetch_assoc()){
+        $response[]={
+            $a['id']:$a['article']
+        }
+    }
 ?>
