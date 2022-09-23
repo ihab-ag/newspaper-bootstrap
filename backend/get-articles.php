@@ -13,6 +13,7 @@
 
     $query= $mysqli->prepare("SELECT * FROM articles");
     $query->execute();
-    $query->get_result();
+    $array=$query->get_result();
+
     
 ?>
