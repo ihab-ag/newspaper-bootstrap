@@ -17,9 +17,7 @@
 
     $response=[];
     while($a=$array->fetch_assoc()){
-        $response[]={
-            $a['id']:$a['article']
-        }
+        $response[]=$a;
     }
 
     $json= json_encode($response);
