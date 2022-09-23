@@ -21,4 +21,7 @@
             $a['id']:$a['article']
         }
     }
+
+    $json= json_encode($response);
+    echo $json;
 ?>
